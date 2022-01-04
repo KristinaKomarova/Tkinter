@@ -31,7 +31,7 @@ txt.bind("<Return>",txt_to_lbl) #Enter
 i1=PhotoImage(file="1.png")
 i2=PhotoImage(file="2.png")
 i3=PhotoImage(file="3.png")
-var=SringVar()
+var=StringVar()
 var.set("üks")
 r1=Radiobutton(aken,image=i1,variable=var,value="üks",command=valik)
 r2=Radiobutton(aken,image=i2,variable=var,value="kaks",command=valik)
