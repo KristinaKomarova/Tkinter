@@ -4,6 +4,7 @@ def klikker(event):
     global klik
     klik+=1
     lbl.configure(text=klik)
+    aken.geometry(str(aken.winfo_width()+10)+"x"+str(aken.winfo_height()+10))
 def klikker_minus(event):
     global klik
     klik-=1
@@ -18,6 +19,8 @@ def valik():
     lbl.configure(text=valik_)
     txt.delete(0,valik_)
     txt.insert(0,valik_)
+def vih(event):
+    aken.destroy()
 aken=Tk() #teeme aken
 aken.title("akna nimetus") #sisestame akna nimi
 aken.geometry("400x300") #akna suurus
